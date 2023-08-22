@@ -3,7 +3,9 @@ import {  GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import { userRows } from "../../dummy_data";
 import './Users.scss';
 import { useState } from "react";
-import Add from "../../components/Add/Add";
+// import Add from "../../components/Add/Add";
+import Form from "../../components/Form/Form";
+import { Link } from "react-router-dom";
 // import { QueryClient, QueryClientProvider, useQuery } from 'react-query';
 
 
@@ -51,9 +53,8 @@ const columns: GridColDef[] = [
       `${params.row.firstName || ''} ${params.row.lastName || ''}`,
   },
 ];
-const Users = () => {
-    
-      
+
+const Users = () => { 
     //   const rows = [
     //     { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35,status :true},
     //     { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
@@ -70,11 +71,15 @@ const Users = () => {
         <div className="users">
             <div className="info">
                 <h1>Users</h1>
-                <button onClick={()=>setOpen(true)}>Add New Users</button>
+                <Link to="/form">
+                    <button onClick={()=>setOpen(true)}>Add New Users</button>
+                </Link>
+                         
             </div>
             
              <DataTable slug="users" columns={columns} rows={userRows} />
-             {open && <Add slug="user" columns={columns} setOpen={setOpen} />}
+             {/* {open && <Add slug="user" columns={columns} setOpen={setOpen} />} */}
+             {open && <Form slug="user" columns={columns} setOpen={setOpen} />}
         </div>
     );
 };

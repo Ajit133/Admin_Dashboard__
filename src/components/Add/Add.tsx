@@ -1,5 +1,6 @@
 import { GridColDef } from '@mui/x-data-grid';
 import './add.scss';
+import Form from '../Form/Form';
 
 type Props = {
     slug:string,
@@ -23,6 +24,7 @@ const Add = (props:Props) => {
                     ))}
                     <button className='button'>Send</button>
                 </form>
+                
              </div>
         </div>
     );

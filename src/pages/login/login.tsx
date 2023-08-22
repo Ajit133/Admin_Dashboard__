@@ -1,6 +1,7 @@
+import './login.scss'
 const Login = () => {
     return (
-        <div>
+        <div className="login">
             <h1>Login</h1>
         </div>
     );
