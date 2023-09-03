@@ -762,3 +762,47 @@ export const menu = [
       },
     ],
   };
+
+  export const Order_data = [
+    {
+      number : "#3201",
+      date : "June 26, 2021",
+      customer : "Jessica Moore",
+      paid : "Yes",
+      status : "New",
+      items : "3 items",
+      Total : "$200.00"
+    },{
+      number : "#2091",
+      date : "May 15, 2021",
+      customer : "Helena Garcia",
+      paid : "NO",
+      status : "Pending",
+      items : "7 items",
+      Total : "$5,023.00"
+    },{
+      number : "#1937",
+      date : "February 23, 2021",
+      customer : "Helena Garcia",
+      paid : "NO",
+      status : "Shipped",
+      items : "1 items",
+      Total : "$703.00"
+    },{
+      number : "#1724",
+      date : "December 10, 2020",
+      customer : "Ryan Ford",
+      paid : "Partial",
+      status : "Shipped",
+      items : "2 items",
+      Total : "$803.00"
+    },{
+      number : "#1603",
+      date : "August 27, 2020",
+      customer : "Helena Garcia",
+      paid : "Yes",
+      status : "Canceled",
+      items : "1 items",
+      Total : "$1003.00"
+    }
+  ]

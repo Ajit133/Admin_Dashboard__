@@ -1,3 +1,36 @@
-.order{
-    background-color: red;
+// .order{
+//    th,td{
+//     border-bottom: 1px solid #ddd;
+//    }
+//    table{
+//     width: 100%;
+//     margin-top: 20px;
+//     background-color: rgb(249, 249, 249);
+//     color:black;
+//     border-collapse: collapse;
+//    }
+//    th{
+//      text-align: left;
+//    }
+   
+// }
+.table {
+   font-family: "Roboto","Helvetica","Arial",sans-serif;
+   font-weight: 400;
+   font-size: 0.875rem;
+   line-height: 1.43;
+   letter-spacing: 0.01071em;
+   color: black;
+   background: white;
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 25px;
+   border-radius: 5px;
+   
+   th,td{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+   }
 }

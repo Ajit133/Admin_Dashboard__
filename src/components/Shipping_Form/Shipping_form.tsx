@@ -1,33 +1,30 @@
 import { useState } from "react";
-import "./settings.scss";
-import Testflex from "../../components/TestFlex/Testflex";
 
-const Settings = () => {
-  const [title,setTitle] = useState("");
-  const [timezone,setTimezone] = useState("");
-  const [currency,setCurrency] = useState("");
-  const [dataFormat,setDateformat] = useState("");
-  const [email,SetEmail] = useState("");
-  const [phone,setPhone] = useState("");
-  const [address,setAddress] = useState("");
-  const [photo,setPhoto] = useState("");
+const Shipping_form = () => {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [address, setAddress] = useState("");
+  const [country, setCountry] = useState("");
+  const [region, setRegion] = useState("");
+  const [city, setCity] = useState("");
+  const [zip, setZip] = useState("");
 
   const handleForm = (e)=>{
-       console.log(title,timezone,currency,dataFormat,email,phone,address,photo)
-       e.preventDefault()
+        e.preventDefault();
+        console.log(fname,lname,email,address,country,region,city,zip)
+        setFname("");
   }
-
   return (
-    <div className="bg-slate-400 w-full h-full pl-4 rounded-md">
-      <div className="ml-6  antialiased mr-3 ">
-      <h1 className="font-bold text-black text-2xl mt-3 ">General Setting</h1>
-      <div className="border-b-4 border-white text-2xl "><span className="text-black ">Manage General Setting</span></div>
-      </div>
+    <>
+      <h1 className="text-3xl font-bold my-7 mx-2">Shipping Details</h1>
+
       <form
+        onSubmit={handleForm}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
         <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
-        General Setting
+          Shipping Details
         </h1>
 
         <div className="flex flex-row justify-center">
@@ -35,12 +32,13 @@ const Settings = () => {
           <div className="mt-3 grow">
             {" "}
             <label className="mx-auto text-black" htmlFor="">
-            Title <span className="text-red-500"> *</span>
+              First Name <span className="text-red-500"> *</span>
             </label>{" "}
             <br />
             <input
               type="text"
               placeholder="Name"
+              onChange={(e)=>setFname(e.target.value)}
               className="mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
             <br />{" "}
@@ -48,12 +46,13 @@ const Settings = () => {
 
           <div className="mt-3 grow">
             <label className="mx-auto text-black" htmlFor="">
-            Time Zone <span className="text-red-500"> *</span>
+              Last Name <span className="text-red-500"> *</span>
             </label>{" "}
             <br />
             <input
               type="text"
               placeholder="Last Name"
+              onChange={(e)=>setLname(e.target.value)}
               className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
             <br />
@@ -65,12 +64,13 @@ const Settings = () => {
           <div className="mt-3 grow">
             {" "}
             <label className="mx-auto text-black" htmlFor="">
-            Date Format <span className="text-red-500"> *</span>
+              Email Address <span className="text-red-500"> *</span>
             </label>{" "}
             <br />
             <input
               type="text"
               placeholder="Type Email"
+              onChange={(e)=>setEmail(e.target.value)}
               style={{ width: "100%" }}
               className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
             />
@@ -79,12 +79,13 @@ const Settings = () => {
 
           <div className="mt-3 grow">
             <label className="mx-auto text-black" htmlFor="">
-            Email
+              AddressLine1
             </label>{" "}
             <br />
             <input
               type="address"
               placeholder="Contact Number"
+              onChange={(e)=>setAddress(e.target.value)}
               className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
             <br />
@@ -95,12 +96,13 @@ const Settings = () => {
           <div className="mt-3 grow">
             {" "}
             <label className="mx-auto text-black" htmlFor="">
-            Phone
+              Country
             </label>{" "}
             <br />
             <input
               type="text"
               placeholder="Country"
+              onChange={(e)=>setCountry(e.target.value)}
               style={{ width: "100%" }}
               className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
             />
@@ -109,11 +111,12 @@ const Settings = () => {
 
           <div className="mt-3 grow">
             <label className="mx-auto text-black" htmlFor="">
-            Address
+              Country/Region
             </label>{" "}
             <br />
             <input
               type="number"
+              onChange={(e)=>setRegion(e.target.value)}
               placeholder="Country/Region"
               className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
@@ -125,12 +128,13 @@ const Settings = () => {
           <div className="mt-3 grow">
             {" "}
             <label className="mx-auto text-black" htmlFor="">
-            Address
+              City
             </label>{" "}
             <br />
             <input
               type="text"
               placeholder="City"
+              onChange={(e)=>setCity(e.target.value)}
               style={{ width: "100%" }}
               className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
             />
@@ -139,36 +143,28 @@ const Settings = () => {
 
           <div className="mt-3 grow">
             <label className="mx-auto text-black" htmlFor="">
-            Product Images
+              Zip/Postal
             </label>{" "}
             <br />
             <input
               type="number"
               placeholder="Zip/Postal"
+              onChange={(e)=>setZip(e.target.value)}
               className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
             <br />
           </div>
         </div>
-        <div className=" ">
-        <div className="mt-3">
-        <label className="mx-auto  text-black" htmlFor="">
-            Product Images
-            </label><br/>
-        <input type="file" className="file-input mt-3  file-input-bordered file-input-info w-full max-w-xs" />
-        </div>
 
-        </div>
-        <div className="mr-px mt-3">
-        <button className="btn btn-accent">Save</button>
-        <button className="btn btn-secondary mx-3">Cancel</button>
-
+        <div className="mr-px mt-3 ">
+          <button className="text-white rounded bg-blue-500 p-2 ">Save</button>
+          <button className="text-white rounded bg-red-600 p-2 mx-3">
+            Cancel
+          </button>
         </div>
       </form>
-    </div>
+    </>
   );
 };
 
-export default Settings;
-
-
+export default Shipping_form;

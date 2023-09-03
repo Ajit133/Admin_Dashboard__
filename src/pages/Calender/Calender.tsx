@@ -1,10 +1,17 @@
 import './calender.scss';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+
 
 const Calender = () => {
+
     return (
-        <div className="calender">
-          <h1 >This is Calender Section</h1>  
-        </div>
+      <div className='calender'>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+      <DateCalendar />
+    </LocalizationProvider>
+     </div>
     );
 };
 

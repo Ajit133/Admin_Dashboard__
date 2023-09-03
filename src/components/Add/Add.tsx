@@ -1,6 +1,6 @@
 import { GridColDef } from '@mui/x-data-grid';
 import './add.scss';
-import Form from '../Form/Form';
+// import Form from '../Form/Form';
 
 type Props = {
     slug:string,
@@ -14,7 +14,7 @@ const Add = (props:Props) => {
              <div className="model">
                 <div className="close" onClick={()=>props.setOpen(false)}>X</div>
                 <h1>Add New {props.slug}</h1>
-                <form>
+                <form className='formClass'>
                     {props.columns.filter(item=>item.field !== "id" && item.field !== "img")
                     .map(column=>(
                         <div className="item">

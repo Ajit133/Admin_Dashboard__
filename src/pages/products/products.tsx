@@ -4,7 +4,9 @@ import './products.scss';
 import {Link} from "react-router-dom";
 import { products } from '../../dummy_data';
 import { GridColDef } from "@mui/x-data-grid";
-import Add from '../../components/Add/Add';
+// import Add from '../../components/Add/Add';
+// import FormSection from '../Form Section/FormSection';
+import UserProductsForm from '../../components/ProductsForm/UserProductsForm';
 
 // add condition of data Columns 
 const columns: GridColDef[] = [
@@ -60,14 +62,17 @@ const Products = () => {
         <div className="products">
             <div className="info">
                 <h1>Users</h1>
-                <Link to="/form">
+                <Link to="/userproductform">
                 <button onClick={()=>setOpen(true)}>Add New Products</button>
                 </Link>
             </div>
+
             <DataTable slug='products' columns={columns} rows={products}/>
             {/* {open && <Add slug='product' columns={columns} setOpen={setOpen}/>} */}
+            {open && <UserProductsForm /> }
         </div>
     );
 };
 
 export default Products;
+// img,title,color,price,producer,CreateAt,instock

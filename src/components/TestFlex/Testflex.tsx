@@ -1,33 +1,12 @@
-import { useState } from "react";
-import "./settings.scss";
-import Testflex from "../../components/TestFlex/Testflex";
+const Testflex = () => {
+    return (
+        <>
 
-const Settings = () => {
-  const [title,setTitle] = useState("");
-  const [timezone,setTimezone] = useState("");
-  const [currency,setCurrency] = useState("");
-  const [dataFormat,setDateformat] = useState("");
-  const [email,SetEmail] = useState("");
-  const [phone,setPhone] = useState("");
-  const [address,setAddress] = useState("");
-  const [photo,setPhoto] = useState("");
-
-  const handleForm = (e)=>{
-       console.log(title,timezone,currency,dataFormat,email,phone,address,photo)
-       e.preventDefault()
-  }
-
-  return (
-    <div className="bg-slate-400 w-full h-full pl-4 rounded-md">
-      <div className="ml-6  antialiased mr-3 ">
-      <h1 className="font-bold text-black text-2xl mt-3 ">General Setting</h1>
-      <div className="border-b-4 border-white text-2xl "><span className="text-black ">Manage General Setting</span></div>
-      </div>
       <form
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
         <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
-        General Setting
+          Shipping Details
         </h1>
 
         <div className="flex flex-row justify-center">
@@ -150,25 +129,21 @@ const Settings = () => {
             <br />
           </div>
         </div>
-        <div className=" ">
-        <div className="mt-3">
-        <label className="mx-auto  text-black" htmlFor="">
-            Product Images
-            </label><br/>
-        <input type="file" className="file-input mt-3  file-input-bordered file-input-info w-full max-w-xs" />
+        <div className="flex flex-row ">
+        <div className="mt-3 grow">
+        <input type="file" className="file-input  file-input-bordered file-input-info w-full max-w-xs" />
         </div>
 
         </div>
-        <div className="mr-px mt-3">
-        <button className="btn btn-accent">Save</button>
-        <button className="btn btn-secondary mx-3">Cancel</button>
-
+        <div className="mr-px mt-3 ">
+          <button className="text-white rounded bg-blue-500 p-2 ">Save</button>
+          <button className="text-white rounded bg-red-600 p-2 mx-3">
+            Cancel
+          </button>
         </div>
       </form>
-    </div>
-  );
+    </>
+    );
 };
 
-export default Settings;
-
-
+export default Testflex;
