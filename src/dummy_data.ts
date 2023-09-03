@@ -107,7 +107,7 @@ export const menu = [
         },
         {
           id: 2,
-          title: "Logs",
+          title: "Sing Up / Login",
           url: "/logs",
           icon: "log.svg",
         },

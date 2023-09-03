@@ -19,11 +19,11 @@ import Settings from "./pages/Settings/Settings";
 import Backups from "./pages/Backups/Backups";
 import Charts from "./pages/Charts/Charts";
 import Logs from "./pages/Logs/Logs";
-import Add from "./components/Add/Add";
-import Table from "./pages/Table/Table";
+// import Add from "./components/Add/Add";
+// import Table from "./pages/Table/Table";
 import UserProductsForm from "./components/ProductsForm/UserProductsForm";
 import FormSection from "./pages/Form Section/FormSection";
-import TestForm from "./components/Testing_Form/Test_Form";
+// import TestForm from "./components/Testing_Form/Test_Form";
 // import Order from "./pages/Order/Order";
 
 function App() {
@@ -92,12 +92,15 @@ function App() {
           path:'/charts',
           element:<Charts />
         },{
-          path:'/logs',
-          element:<Logs />
-        },{
           path:'/forms',
           element:<Form />,
-        }
+        },{
+          path:"/formsection",
+          element : <FormSection /> },
+          {
+            path : "/userproductform",
+            element : <UserProductsForm />,
+          }
       ],
     },
     {
@@ -106,12 +109,10 @@ function App() {
     },{
       path: "/form",
       element: <Form /> 
-    },{
-      path:"/formsection",
-      element : <FormSection /> },
+    },
       {
-        path : "/userproductform",
-        element : <UserProductsForm />,
+        path:'/logs',
+        element:<Logs />
       }
   ]);
   return <RouterProvider router={router} />;

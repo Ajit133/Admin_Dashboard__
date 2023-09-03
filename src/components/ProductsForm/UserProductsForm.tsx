@@ -19,26 +19,136 @@ const UserProductsForm = () => {
     const [instock,setInstock] = useState('');
 
     return (
-        <div className="productsForm">
-            <form onSubmit={handleForm} >
-                    {/* <h1>This name is {props.userData}</h1> */}
-                     <label htmlFor="fname"  >Images</label>  
-                     <input type="file" onChange={(e)=>setImage(e.target.value)} placeholder='Upload Photo' />
-                     <label htmlFor="fname" >Title</label>  
-                     <input type="text" onChange={(e)=>setTitle(e.target.value)} placeholder='Actions' />
-                     <label htmlFor="fname" >Color</label>  
-                     <input type="text" onChange={(e)=>setColor(e.target.value)} placeholder='Enter Status' />
-                     <label htmlFor="fname" >Price</label>  
-                     <input type="text" onChange={(e)=>setPrice(e.target.value)} placeholder='First name' />
-                     <label htmlFor="fname" >Producer</label>  
-                     <input type="text"  onChange={(e)=>{setproducer(e.target.value)}} placeholder='Last Name' />
-                     <label htmlFor="fname" >CreateAt</label>  
-                     <input type="text" onChange={(e)=>{setCreateat(e.target.value)}}  placeholder='Age' />
-                     <label htmlFor="fname" >InStock</label>  
-                     <input type="text"  placeholder='Full Name' onChange={(e)=>{setInstock(e.target.value)}} />
-                     <input type='submit' className='submit' /> 
-             </form>
+        <form
+        onSubmit={handleForm}
+        className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
+        action="">
+        <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
+          Create Product
+        </h1>
+
+        <div className="flex flex-row justify-center">
+
+          <div className="mt-3 grow">
+            {" "}
+            <label className="mx-auto text-black" htmlFor="">
+              Image <span className="text-red-500"> *</span>
+            </label>{" "}
+            <br />
+            <input
+              type="text"
+              placeholder="Name"
+              onChange={(e)=>setImage(e.target.value)}
+              className="mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
+            />
+            <br />{" "}
+          </div>
+
+          <div className="mt-3 grow">
+            <label className="mx-auto text-black" htmlFor="">
+              Title <span className="text-red-500"> *</span>
+            </label>{" "}
+            <br />
+            <input
+              type="text"
+              placeholder="Last Name"
+              onChange={(e)=>setTitle(e.target.value)}
+              className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
+            />
+            <br />
+          </div>
+
         </div>
+        <div className="flex flex-row justify-center">
+
+          <div className="mt-3 grow">
+            {" "}
+            <label className="mx-auto text-black" htmlFor="">
+              Color <span className="text-red-500"> *</span>
+            </label>{" "}
+            <br />
+            <input
+              type="text"
+              placeholder="Type Email"
+              onChange={(e)=>setColor(e.target.value)}
+              style={{ width: "100%" }}
+              className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
+            />
+            <br />{" "}
+          </div>
+
+          <div className="mt-3 grow">
+            <label className="mx-auto text-black" htmlFor="">
+              Price
+            </label>{" "}
+            <br />
+            <input
+              type="number"
+              placeholder="Contact Number"
+              onChange={(e)=>setPrice(e.target.value)}
+              className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
+            />
+            <br />
+          </div>
+
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="mt-3 grow">
+            {" "}
+            <label className="mx-auto text-black" htmlFor="">
+              Producer
+            </label>{" "}
+            <br />
+            <input
+              type="text"
+              placeholder="Country"
+              onChange={(e)=>setproducer(e.target.value)}
+              style={{ width: "100%" }}
+              className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
+            />
+            <br />{" "}
+          </div>
+
+          <div className="mt-3 grow mr-15">
+            <label className="mx-auto text-black" htmlFor="">
+              Create At
+            </label>{" "}
+            <br />
+            <input
+              type="time"
+              onChange={(e)=>setCreateat(e.target.value)}
+              placeholder="Country/Region"
+              className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
+            />
+            <br />
+          </div>
+
+        </div>
+        <div className="flex flex-row justify-center">
+          <div className="mt-3 grow">
+            {" "}
+            <label className="mx-auto text-black" htmlFor="">
+              In Stock
+            </label>{" "}
+            <br />
+            <input
+              type="Number"
+              placeholder="City"
+              onChange={(e)=>setInstock(e.target.value)}
+              style={{ width: "100%" }}
+              className="mx-auto mt-2 input   text-black bg-slate-50 input-bordered input-info  max-w-xs"
+            />
+            <br />{" "}
+          </div>
+        </div>
+
+        <div className="mr-px mt-3 ">
+          <button className="text-white rounded bg-blue-500 p-2 ">Save</button>
+          <button className="text-white rounded bg-red-600 p-2 mx-3">
+            Cancel
+          </button>
+        </div>
+      </form>
     );
 };
 
