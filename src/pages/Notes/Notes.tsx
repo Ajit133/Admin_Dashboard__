@@ -23,9 +23,9 @@ const Notes = () => {
             <label className='text-xl' htmlFor="">Enter Description</label><br/>
             <textarea
              className='mt-5 p-4 text-black rounded bg-slate-100'
-             cols="30"
+             cols={30}
              placeholder='Enter Description'
-             style={{color:"black",width:"100%"}} rows="10"></textarea> <br/>
+             style={{color:"black",width:"100%"}} rows={10}></textarea> <br/>
             </div>
             <button className="bg-sky-500 mt-2 hover:bg-sky-700 p-4 rounded" style={{width:"100%"}}>Submit</button>
            </form>

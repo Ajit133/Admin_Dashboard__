@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./settings.scss";
-import Testflex from "../../components/TestFlex/Testflex";
+// import Testflex from "../../components/TestFlex/Testflex";
 
 const Settings = () => {
   const [title,setTitle] = useState("");
