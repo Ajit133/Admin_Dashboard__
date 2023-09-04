@@ -11,7 +11,7 @@ const FormSection = () => {
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
         <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
-          Shipping Details
+        Create Client
         </h1>
 
         <div className="flex flex-row justify-center">
@@ -32,7 +32,7 @@ const FormSection = () => {
             <br />{" "}
           </div>
 
-          <div className="mt-3 grow">
+          <div className="mt-3 mr-12 grow">
             <label className="mx-auto text-black" htmlFor="">
             Actions<span className="text-red-500"> *</span>
             </label>{" "}
