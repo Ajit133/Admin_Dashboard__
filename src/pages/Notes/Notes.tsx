@@ -1,20 +1,19 @@
 import './Notes.scss';
-import { SetStateAction, useState } from 'react';
 
 const Notes = () => {
-    const [textarea,setTextarea] = useState('');
+    // const [textarea,setTextarea] = useState('');
 
-    const handleTextarea = (e)=>{
-        e.preventDefault();
-        setTextarea(e.target.value)
-        console.log(textarea)
+    // const handleTextarea = (e: { preventDefault: () => void; target: { value: SetStateAction<string>; }; })=>{
+    //     e.preventDefault();
+    //     setTextarea(e.target.value)
+    //     console.log(textarea)
         
-    }
+    // }
     
     return (
         <div className='notes'>
             <h1 className='text-3xl'>Notes ....... </h1>
-           <form action="" onSubmit={handleTextarea}>
+           <form  >
             <div className='mt-3'>
             <label className='text-xl' >Enter Title</label><br/>
             <input type="text" style={{width:"100%"}} className='mt-2 p-4 w-96 text-black bg-slate-100 rounded' placeholder='Enter Title' />

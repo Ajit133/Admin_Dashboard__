@@ -6,7 +6,7 @@ const Posts = () => {
   const [title,setTitle] = useState("");
   const [tags,setTags] = useState("");
   const [description,setDescription] = useState("")
-  const handleTextarea = (e)=>{
+  const handleTextarea = (e: { preventDefault: () => void; })=>{
       console.log(title,tags,description)
       e.preventDefault()
   }

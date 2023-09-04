@@ -1,4 +1,3 @@
-import BarChartBox from '../../components/barChartBox/BarChartBox';
 import './charts.scss';
 
 const Charts = () => {

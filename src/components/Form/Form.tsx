@@ -1,7 +1,6 @@
 import './Form.scss';
 import TestForm from '../Testing_Form/Test_Form';
 import Shipping_form from '../Shipping_Form/Shipping_form';
-import Testflex from '../TestFlex/Testflex';
 
 
 const Form = () => {
@@ -11,7 +10,6 @@ const Form = () => {
     <>
     <TestForm />
     <Shipping_form />
-    {/* <Testflex /> */}
     </>
   );
 };

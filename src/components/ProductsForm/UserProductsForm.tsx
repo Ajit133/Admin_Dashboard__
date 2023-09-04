@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const UserProductsForm = () => {
     const navigate = useNavigate();
-    const handleForm = (e)=>{
+    const handleForm = (e: { preventDefault: () => void; })=>{
           console.log(image,title,color,price,producer,createat,instock);
           e.preventDefault()
           navigate("/")

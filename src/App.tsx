@@ -5,7 +5,6 @@ import Products from "./pages/products/products";
 import Navbar from "./components/Navbar/Navbar";
 import Menu from "./components/Menu/Menu";
 import Footer from "./components/Footer/Footer";
-import Login from "./pages/login/Login";
 import "./styles/global.scss";
 import User from "./pages/user/user";
 import Product from "./pages/product/Product";
@@ -102,10 +101,6 @@ function App() {
             element : <UserProductsForm />,
           }
       ],
-    },
-    {
-      path: "/login",
-      element: <Login />,
     },{
       path: "/form",
       element: <Form /> 

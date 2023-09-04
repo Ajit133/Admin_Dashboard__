@@ -8,10 +8,9 @@ const Logs = () => {
   const [lname, setLname] = useState("");
   const [password, setPassword] = useState("");
   const [city, setCity] = useState("");
-  const [state, setState] = useState("");
   const [zip, setZip] = useState("");
 
-  const handleForm = (e) => {
+  const handleForm = (e: { preventDefault: () => void; }) => {
     console.log(fname,lname,password,city,zip)
     e.preventDefault();
     navigate("/");
@@ -40,7 +39,7 @@ const Logs = () => {
           <div className="w-full md:w-1/2 px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-last-name">
+              >
               Last Name
             </label>
             <input
@@ -56,7 +55,7 @@ const Logs = () => {
           <div className="w-full px-3">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-password">
+              >
               Password
             </label>
             <input
@@ -73,7 +72,7 @@ const Logs = () => {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-city">
+              >
               City
             </label>
             <input
@@ -87,7 +86,7 @@ const Logs = () => {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-state">
+              >
               State
             </label>
             <div className="relative">
@@ -111,7 +110,7 @@ const Logs = () => {
           <div className="w-full md:w-1/3 px-3 mb-6 md:mb-0">
             <label
               className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-              for="grid-zip">
+              >
               Zip
             </label>
             <input

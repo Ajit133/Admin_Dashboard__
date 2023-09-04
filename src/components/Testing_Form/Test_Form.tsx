@@ -5,7 +5,7 @@ const TestForm = () => {
   const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
 
-  const handleForm = (e) => {
+  const handleForm = (e: { preventDefault: () => void; }) => {
      console.log(name,number,address)
     e.preventDefault();
   };

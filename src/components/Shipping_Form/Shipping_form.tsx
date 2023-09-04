@@ -10,7 +10,7 @@ const Shipping_form = () => {
   const [city, setCity] = useState("");
   const [zip, setZip] = useState("");
 
-  const handleForm = (e)=>{
+  const handleForm = (e: { preventDefault: () => void; })=>{
         e.preventDefault();
         console.log(fname,lname,email,address,country,region,city,zip)
         setFname("");
