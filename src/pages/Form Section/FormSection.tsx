@@ -1,13 +1,27 @@
 // import Form2 from '../../components/Form2/Form2';
+import { useState } from "react";
 import "./formsection.scss";
 
 const FormSection = () => {
+  const [image,setImage] = useState("");
+  const [action,setAction] = useState("");
+  const [status,setStatus] = useState("");
+  const [firstname,setFirstName] = useState("");
+  const [lastName,setLastname] = useState("");
+  const [age,setAge] = useState("");
+  
+  const handleSubmit = (e: { preventDefault: () => void; })=>{
+         console.log(image,action,status,firstname,lastName,age)
+         e.preventDefault();
+  }
+  
   return (
     <div className="formsection">
       <>
         <h1 className="text-3xl font-bold">Create Client</h1>
 
         <form
+        onSubmit={handleSubmit}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
         <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
@@ -22,13 +36,8 @@ const FormSection = () => {
             Images <span className="text-red-500"> *</span>
             </label>{" "}
             <br />
-            <input type="file" className="file-input mt-3  file-input-bordered file-input-info w-full max-w-xs" />
+            <input type="file" onChange={(e)=>setImage(e.target.value)} className="file-input mt-3 file-input-bordered file-input-info w-full max-w-xs" />
 
-            {/* <input
-              type="text"
-              placeholder="Name"
-              className="mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
-            /> */}
             <br />{" "}
           </div>
 
@@ -39,7 +48,8 @@ const FormSection = () => {
             <br />
             <input
               type="text"
-              placeholder="Last Name"
+              onChange={(e)=>setAction(e.target.value)}
+              placeholder="Action"
               className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
             <br />
@@ -56,6 +66,7 @@ const FormSection = () => {
             <br />
             <input
               type="text"
+              onChange={(e)=>setStatus(e.target.value)}
               placeholder="Type Email"
               style={{ width: "100%" }}
               className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
@@ -70,6 +81,7 @@ const FormSection = () => {
             <br />
             <input
               type="address"
+              onChange={(e)=>setFirstName(e.target.value)}
               placeholder="Contact Number"
               className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
@@ -86,6 +98,7 @@ const FormSection = () => {
             <br />
             <input
               type="text"
+              onChange={(e)=>setLastname(e.target.value)}
               placeholder="Country"
               style={{ width: "100%" }}
               className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
@@ -100,13 +113,14 @@ const FormSection = () => {
             <br />
             <input
               type="number"
+              onChange={(e)=>setAge(e.target.value)}
               placeholder="Country/Region"
               className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
             />
             <br />
           </div>
-
         </div>
+        
 
         <div className="mr-px mt-3 ">
           <button className="text-white rounded bg-blue-500 p-2 ">Save</button>

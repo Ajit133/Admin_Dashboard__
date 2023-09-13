@@ -22,21 +22,21 @@ a {
 .container {
   display: flex;
   
-  @include xxl{
-    background-color:rgba(255,0,0,0.101);
-  }
-  @include xl{
-    background-color:rgba(106,255,0,0.101);
-  }
-  @include lg{
-    background-color:rgba(0,238,255,0.101);
-  }
-  @include md{
-    background-color:rgba(174,123,203,0.101);
-  }
-  @include sm{
-    background-color: rgba(106,255,0,0.101);
-  }
+  // @include xxl{
+  //   background-color:rgba(255,0,0,0.101);
+  // }
+  // @include xl{
+  //   background-color:rgba(106,255,0,0.101);
+  // }
+  // @include lg{
+  //   background-color:rgba(0,238,255,0.101);
+  // }
+  // @include md{
+  //   background-color:rgba(174,123,203,0.101);
+  // }
+  // @include sm{
+  //   background-color: rgba(106,255,0,0.101);
+  // }
 }
 
 .menuContainer {

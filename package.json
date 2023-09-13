@@ -25,7 +25,8 @@
     "react-query": "^3.39.3",
     "react-router-dom": "^6.14.2",
     "recharts": "^2.7.3",
-    "sass": "^1.65.1"
+    "sass": "^1.65.1",
+    "screenfull": "^6.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.14",

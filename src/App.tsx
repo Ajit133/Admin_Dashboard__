@@ -101,7 +101,8 @@ function App() {
             element : <UserProductsForm />,
           }
       ],
-    },{
+    },
+    {
       path: "/form",
       element: <Form /> 
     },

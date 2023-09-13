@@ -13,7 +13,7 @@ const Logs = () => {
   const handleForm = (e: { preventDefault: () => void; }) => {
     console.log(fname,lname,password,city,zip)
     e.preventDefault();
-    navigate("/");
+    navigate("/home");
   };
   return (
     <div className="logs ">

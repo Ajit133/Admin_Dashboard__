@@ -5,8 +5,8 @@ const TestForm = () => {
   const [number, setNumber] = useState("");
   const [address, setAddress] = useState("");
 
-  const handleForm = (e: { preventDefault: () => void; }) => {
-     console.log(name,number,address)
+  const handleForm = (e: { preventDefault: () => void }) => {
+    console.log(name, number, address);
     e.preventDefault();
   };
   return (
@@ -29,8 +29,8 @@ const TestForm = () => {
           <input
             type="text"
             placeholder="Name"
-            style={{width:"100%"}}
-            onChange={(e)=>setName(e.target.value)}
+            style={{ width: "100%" }}
+            onChange={(e) => setName(e.target.value)}
             className="mx-auto mt-2 input  text-black bg-slate-50 input-bordered input-info  max-w-xs"
           />
           <br />{" "}
@@ -42,7 +42,7 @@ const TestForm = () => {
           <br />
           <input
             type="number"
-            onChange={(e)=>setNumber(e.target.value)}
+            onChange={(e) => setNumber(e.target.value)}
             placeholder="Contact Number"
             className=" mt-2 mx-auto text-black bg-slate-50 input input-bordered input-info w-full max-w-xs"
           />
@@ -57,7 +57,7 @@ const TestForm = () => {
           <input
             type="text"
             placeholder="Address"
-            onChange={(e)=>setAddress(e.target.value)}
+            onChange={(e) => setAddress(e.target.value)}
             className="mx-auto text-black bg-slate-50 mt-2 input input-bordered input-info w-full max-w-xs"
           />{" "}
         </div>
@@ -69,7 +69,6 @@ const TestForm = () => {
         </div>
       </form>
       {/* flex Form */}
-      
     </>
   );
 };
