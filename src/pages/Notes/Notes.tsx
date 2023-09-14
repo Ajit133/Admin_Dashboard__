@@ -2,7 +2,6 @@ import "./Notes.scss";
 
 const Notes = () => {
 
-  };
 
   return (
     <div className="notes">
