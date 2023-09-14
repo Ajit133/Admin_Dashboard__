@@ -26,7 +26,6 @@ import FormSection from "./pages/Form Section/FormSection";
 // import Order from "./pages/Order/Order";
 
 function App() {
-  
   const Layout = () => {
     return (
       <div className="main">
@@ -36,7 +35,7 @@ function App() {
             <Menu />
           </div>
           <div className="contentContainer">
-            <Outlet />          
+            <Outlet />
           </div>
         </div>
         <Footer />
@@ -59,57 +58,69 @@ function App() {
         {
           path: "/products",
           element: <Products />,
-        },{
+        },
+        {
           path: "/users/:id",
           element: <User />,
         },
         {
           path: "/products/:id",
           element: <Product />,
-        },{
-          path:"/order",
-          element : <Order />
-        },{
-          path:"/posts",
-          element : <Posts /> 
-        },{
-          path:"/elements",
-          element : <Elements />
-        },{
-          path:"/notes",
-          element : <Notes />}
-        ,{
-          path:"/calendar",
-          element : <Calender />,
-        },{
-          path:"/settings",
-          element:<Settings />,
-        },{
-          path:"/backups",
-          element:<Backups />,
-        },{
-          path:'/charts',
-          element:<Charts />
-        },{
-          path:'/forms',
-          element:<Form />,
-        },{
-          path:"/formsection",
-          element : <FormSection /> },
-          {
-            path : "/userproductform",
-            element : <UserProductsForm />,
-          }
+        },
+        {
+          path: "/order",
+          element: <Order />,
+        },
+        {
+          path: "/posts",
+          element: <Posts />,
+        },
+        {
+          path: "/elements",
+          element: <Elements />,
+        },
+        {
+          path: "/notes",
+          element: <Notes />,
+        },
+        {
+          path: "/calendar",
+          element: <Calender />,
+        },
+        {
+          path: "/settings",
+          element: <Settings />,
+        },
+        {
+          path: "/backups",
+          element: <Backups />,
+        },
+        {
+          path: "/charts",
+          element: <Charts />,
+        },
+        {
+          path: "/forms",
+          element: <Form />,
+        },
+        {
+          path: "/formsection",
+          element: <FormSection />,
+        },
+        {
+          path: "/userproductform",
+          element: <UserProductsForm />,
+        },
       ],
     },
     {
       path: "/form",
-      element: <Form /> 
+      element: <Form />,
     },
-      {
-        path:'/logs',
-        element:<Logs />
-      },
+    {
+      path: "/logs",
+      element: <Logs />,
+    },
   ]);
   return <RouterProvider router={router} />;
 }
