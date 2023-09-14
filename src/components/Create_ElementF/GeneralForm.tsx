@@ -104,4 +104,3 @@ const GeneralForm = () => {
 };
 
 export default GeneralForm;
-// Email,Password,Placeholder,Readonly,Disabled,Number,URL,Search,Tel

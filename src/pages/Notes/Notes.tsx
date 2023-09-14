@@ -4,7 +4,7 @@ import { useState } from "react";
 const Notes = () => {
   const [title, setTitle] = useState("");
   const [textarea, setTextarea] = useState("");
-  const handleForm = (e) => {
+  const handleForm = (e: { preventDefault: () => void; }) => {
     console.log(title, textarea);
     e.preventDefault();
   };
