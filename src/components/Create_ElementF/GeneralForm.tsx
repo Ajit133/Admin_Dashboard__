@@ -1,4 +1,5 @@
 import {useState} from "react";
+
 const GeneralForm = () => {
 
    const [email,setEmail] =useState("");
@@ -7,7 +8,7 @@ const GeneralForm = () => {
    const [number,setNumber] = useState("");
    const [url,setUrl] = useState(""); 
   
-   const handleForm = (e)=>{
+   const handleForm = (e: { preventDefault: () => void; })=>{
        console.log(email,password,readonly,number,url)
        e.preventDefault()
    }

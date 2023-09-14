@@ -109,7 +109,7 @@ function App() {
       {
         path:'/logs',
         element:<Logs />
-      }
+      },
   ]);
   return <RouterProvider router={router} />;
 }

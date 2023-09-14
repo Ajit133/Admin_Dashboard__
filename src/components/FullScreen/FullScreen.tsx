@@ -1,9 +1,15 @@
+// import { useState } from "react";
 import screenfull from "screenfull";
 
 const FullScreen = () => {
     const handleClick = ()=>{
        if(screenfull.isEnabled){
-         screenfull.request(); 
+         if(screenfull.isFullscreen){
+            screenfull.exit();
+         } else{
+            screenfull.request();
+            
+         }
        }
     }
     return (
