@@ -1,5 +1,5 @@
 import {FaBars} from 'react-icons/fa';
-const Sidebar = ({children}) => {
+const Sidebar = () => {
     return (
         <div className="container">
             <div className="sidebar">
