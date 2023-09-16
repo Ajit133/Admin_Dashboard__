@@ -27,9 +27,12 @@ const Settings = () => {
         onSubmit={handleForm}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
-        <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
-        General Setting
+        <div className="flex items-center" style={{"marginLeft":"-14px"}}>
+          <button><img className="w-7 h-7 object-cover " src="arrow-left-5-svgrepo-com.svg" alt="" /></button> 
+          <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
+        General Settings 
         </h1>
+          </div>
 
         <div className="flex flex-row justify-center">
 

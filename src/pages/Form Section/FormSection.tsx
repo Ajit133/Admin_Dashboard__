@@ -17,16 +17,19 @@ const FormSection = () => {
   
   return (
     <div className="formsection">
-      <>
-        <h1 className="text-3xl font-bold">Create Client</h1>
-
+        <h1 className="text-3xl font-bold">
+          Create Client</h1>
         <form
         onSubmit={handleSubmit}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
-        <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
-        Create Client
+          <div className="flex items-center">
+          <button><img className="w-7 h-7 object-cover " src="arrow-left-5-svgrepo-com.svg" alt="" /></button> 
+          <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
+         Create Client
         </h1>
+          </div>
+        
 
         <div className="flex flex-row justify-center">
 
@@ -130,7 +133,6 @@ const FormSection = () => {
         </div>
       </form>
         {/* flex Form */}
-      </>
     </div>
   );
 };
