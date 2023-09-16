@@ -22,7 +22,7 @@ import Logs from "./pages/Logs/Logs";
 // import Table from "./pages/Table/Table";
 import UserProductsForm from "./components/ProductsForm/UserProductsForm";
 import FormSection from "./pages/Form Section/FormSection";
-import Sidebar from "./components/SideBar/Sidebar";
+// import Sidebar from "./components/SideBar/Sidebar";
 // import TestForm from "./components/Testing_Form/Test_Form";
 // import Order from "./pages/Order/Order";
 
