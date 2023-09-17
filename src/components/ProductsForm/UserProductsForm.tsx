@@ -1,5 +1,6 @@
 import { useState } from "react";
 import './Products.scss';
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const UserProductsForm = () => {
@@ -23,12 +24,29 @@ const UserProductsForm = () => {
         onSubmit={handleForm}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
-        <div className="flex items-center">
+          <div className="flex justify-between">
+          <div className="flex items-center">
           <button><img className="w-7 h-7 object-cover " src="arrow-left-5-svgrepo-com.svg" alt="" /></button> 
           <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
          Create Product
         </h1>
           </div>
+          <div className="flex text-black  justify-end gap-1">
+            <div>
+              <Link to="/">
+                <span className="">Apps</span>
+              </Link>
+            </div>
+            <span>/</span>
+            <div>
+              <Link to="/products">
+                <span>Product</span>
+              </Link>
+            </div>
+          </div>
+          
+          </div>
+        
 
         <div className="flex flex-row justify-center">
 

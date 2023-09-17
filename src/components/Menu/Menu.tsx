@@ -4,6 +4,7 @@ import { menu } from "../../dummy_data";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 const Menu = () => {
+    
     const [isOpen,setIsOpen] = useState(true);
     const toggle = ()=>{
         setIsOpen(!isOpen);

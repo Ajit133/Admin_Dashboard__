@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Shipping_form = () => {
   const [fname, setFname] = useState("");
@@ -23,11 +24,26 @@ const Shipping_form = () => {
         onSubmit={handleForm}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
         action="">
+          <div className="flex justify-between">  
         <div className="flex items-center" style={{"marginLeft":"-14px"}}>
           <button><img className="w-7 h-7 object-cover " src="arrow-left-5-svgrepo-com.svg" alt="" /></button> 
           <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
          Shipping Details 
         </h1>
+          </div>
+          <div className="flex text-black  justify-end gap-1">
+            <div>
+              <Link to="/">
+                <span className="">Apps</span>
+              </Link>
+            </div>
+            <span>/</span>
+            <div>
+              <Link to="/products">
+                <span>Shipping Cart</span>
+              </Link>
+            </div>
+          </div>
           </div>
 
         <div className="flex flex-row justify-center">
