@@ -5,6 +5,10 @@
         width: 1400px;
     .MuiDataGrid-toolbarContainer{
         flex-direction: row-reverse;
+    }.MuiDataGrid-main{
+        .MuiDataGrid-virtualScroller{
+            overflow: hidden;
+        }
     }
     img{
         width: 32px;

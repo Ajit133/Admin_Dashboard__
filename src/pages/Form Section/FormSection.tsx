@@ -18,7 +18,23 @@ const FormSection = () => {
 
   return (
     <div className="formsection">
+      <div className="flex justify-between m-auto bg-white text-black p-5 rounded-md " style={{"width":"850px"}}>
       <h1 className="text-3xl font-bold">Create Client</h1>
+      <div className="flex text-black   justify-end gap-1">
+            <div>
+              <Link to="/">
+                <span className="">Apps</span>
+              </Link>
+            </div>
+            <span>/</span>
+            <div>
+              <Link to="/users">
+                <span>Users</span>
+              </Link>
+            </div>
+          </div>
+
+      </div>
       <form
         onSubmit={handleSubmit}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
@@ -36,7 +52,7 @@ const FormSection = () => {
               Create Client
             </h1>
           </div>
-          <div className="flex text-black  justify-end gap-1">
+          {/* <div className="flex text-black  justify-end gap-1">
             <div>
               <Link to="/">
                 <span className="">Apps</span>
@@ -48,7 +64,7 @@ const FormSection = () => {
                 <span>Users</span>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-row justify-center">

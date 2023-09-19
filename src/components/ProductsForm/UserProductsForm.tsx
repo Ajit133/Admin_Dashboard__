@@ -39,7 +39,7 @@ const UserProductsForm = () => {
             </div>
             <span>/</span>
             <div>
-              <Link to="/products">
+              <Link to="/">
                 <span>Product</span>
               </Link>
             </div>
