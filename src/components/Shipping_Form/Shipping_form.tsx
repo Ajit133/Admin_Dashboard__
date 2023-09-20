@@ -18,7 +18,7 @@ const Shipping_form = () => {
   }
   return (
     <>
-      <h1 className="text-3xl font-bold my-7 mx-2">Shipping Details</h1>
+      <h1 className="text-3xl font-bold my-7" style={{"marginLeft": "12.5rem"}}>Shipping Details</h1>
 
       <form
         onSubmit={handleForm}

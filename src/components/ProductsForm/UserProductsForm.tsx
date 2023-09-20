@@ -20,6 +20,23 @@ const UserProductsForm = () => {
     const [instock,setInstock] = useState('');
 
     return (
+      <div className="userproductform">
+        <div className="flex justify-between m-auto bg-white text-black p-5 rounded-md " style={{"width":"850px"}}>
+      <h1 className="text-3xl font-bold">Create Client</h1>
+      <div className="flex text-black   justify-end gap-1">
+            <div>
+              <Link to="/">
+                <span className="">Apps</span>
+              </Link>
+            </div>
+            <span>/</span>
+            <div>
+              <Link to="/users">
+                <span>Product</span>
+              </Link>
+            </div>
+          </div>
+      </div>
         <form
         onSubmit={handleForm}
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3 	rounded mt-10"
@@ -31,20 +48,6 @@ const UserProductsForm = () => {
          Create Product
         </h1>
           </div>
-          <div className="flex text-black  justify-end gap-1">
-            <div>
-              <Link to="/">
-                <span className="">Apps</span>
-              </Link>
-            </div>
-            <span>/</span>
-            <div>
-              <Link to="/">
-                <span>Product</span>
-              </Link>
-            </div>
-          </div>
-          
           </div>
         
 
@@ -170,6 +173,7 @@ const UserProductsForm = () => {
           </button>
         </div>
       </form>
+      </div>
     );
 };
 

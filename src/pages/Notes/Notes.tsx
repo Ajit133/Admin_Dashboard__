@@ -5,7 +5,7 @@ const Notes = () => {
 
   return (
     <div className="notes">
-      <h1 className="text-3xl">Notes ....... </h1>
+      <h1 className="text-5xl font-bold">Notes</h1>
       <form >
         <div className="mt-3">
           <label className="text-xl">Enter Title</label>

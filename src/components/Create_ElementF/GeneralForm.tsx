@@ -1,9 +1,23 @@
 import { Link } from "react-router-dom";
 const GeneralForm = () => {
   return (
-    <>
-      <h1 className="text-5xl font-bold text-black">General Elements</h1>
-
+          <div className="generalform">
+       <div className="flex justify-between m-auto bg-white text-black p-5  rounded-md " style={{"width":"850px"}}>
+      <h1 className="text-3xl font-bold">Create Client</h1>
+      <div className="flex text-black   justify-end gap-1">
+            <div>
+              <Link to="/">
+                <span className="">Apps</span>
+              </Link>
+            </div>
+            <span>/</span>
+            <div>
+              <Link to="/users">
+                <span>Users</span>
+              </Link>
+            </div>
+          </div>
+      </div>
       <form
         className="p-5 mx-auto m-5 bg-slate-50 w-2/3	rounded-lg mt-10"
         action="">
@@ -14,19 +28,7 @@ const GeneralForm = () => {
          Create General Elements 
         </h1>
           </div>
-          <div className="flex text-black  justify-end gap-1">
-            <div>
-              <Link to="/">
-                <span className="">Apps</span>
-              </Link>
-            </div>
-            <span>/</span>
-            <div>
-              <Link to="/calendar">
-                <span>General Element</span>
-              </Link>
-            </div>
-          </div>
+          
           </div>
         <div className="mt-3">
           {" "}
@@ -96,7 +98,7 @@ const GeneralForm = () => {
           </button>
         </div>
       </form>
-    </>
+      </div>
   );
 };
 

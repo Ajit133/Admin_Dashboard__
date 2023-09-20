@@ -3,7 +3,7 @@ import { Order_data } from "../../dummy_data";
 const Order = () => {
   return (
     <div>
-      <h1 className="text-4xl text-white">Order Page</h1>
+      <h1 className="text-5xl font-bold">Order Page</h1>
       <table className="table ">
         <tr>
           <th>
