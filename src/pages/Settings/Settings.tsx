@@ -29,12 +29,22 @@ const Settings = () => {
   };
 
   return (
-    <div className="bg-slate-400 w-full h-full pl-4 rounded-md">
-      <div className="ml-6  antialiased mr-3 ">
-        <h1 className="font-bold text-black text-2xl mt-3 ">General Setting</h1>
-        <div className="border-b-4 border-white text-2xl ">
-          <span className="text-black ">Manage General Setting</span>
-        </div>
+    <div >
+      <div className="flex justify-between m-auto bg-white text-black p-5 rounded-md " style={{"width":"850px"}}>
+      <h1 className="text-3xl font-bold text-sky-600	">Create General Setting</h1>
+      <div className="flex text-black   justify-end gap-1">
+            <div>
+              <Link to="/">
+                <span className="text-sky-600	">Apps</span>
+              </Link>
+            </div>
+            {/* <span>/</span>
+            <div>
+              <Link to="/users">
+                <span>Users</span>
+              </Link>
+            </div> */}
+          </div>
       </div>
       <form
         onSubmit={handleForm}
@@ -53,13 +63,13 @@ const Settings = () => {
               General Settings
             </h1>
           </div>
-          <div className="flex text-black  justify-end gap-1">
+          {/* <div className="flex text-black  justify-end gap-1">
             <div>
               <Link to="/">
                 <span className="">Apps</span>
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="flex flex-row justify-center">

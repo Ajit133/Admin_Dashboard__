@@ -40,12 +40,15 @@ a {
 }
 
 .menuContainer{
-  width: 250px;
+  width: 230px;
   padding: 5px 20px;
-  border-right: 2px solid $soft-bg;
+  // border-right: 2px solid $soft-bg;
 
   @include lg{
     width: max-content;
+  }
+  @include lg{
+    overflow: hidden;
   }
 }
 // scroll bar for Menu

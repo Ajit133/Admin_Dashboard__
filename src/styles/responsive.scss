@@ -19,8 +19,10 @@ $xxl:1400px;
 @mixin lg {
     @media screen and (max-width:($lg)){
         @content;
+        
     }
 }
+
 
 @mixin xl {
     @media screen and (max-width:($xl)){

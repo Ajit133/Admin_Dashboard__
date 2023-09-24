@@ -13,17 +13,17 @@ const TestForm = () => {
   return (
     <>
        <div className="flex justify-between m-auto bg-white text-black p-5 rounded-md " style={{"width":"850px"}}>
-      <h1 className="text-3xl font-bold">Create Client</h1>
+      <h1 className="text-3xl font-bold text-sky-600">Forms</h1>
       <div className="flex text-black   justify-end gap-1">
             <div>
               <Link to="/">
-                <span className="">Apps</span>
+                <span className="text-sky-600">Apps</span>
               </Link>
             </div>
             <span>/</span>
             <div>
               <Link to="/users">
-                <span>Users</span>
+                <span className="text-sky-600">Users</span>
               </Link>
             </div>
           </div>

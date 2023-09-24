@@ -19,17 +19,17 @@ const FormSection = () => {
   return (
     <div className="formsection">
       <div className="flex justify-between m-auto bg-white text-black p-5 rounded-md " style={{"width":"850px"}}>
-      <h1 className="text-3xl font-bold">Create Client</h1>
+      <h1 className="text-3xl font-bold text-sky-600">Create Client</h1>
       <div className="flex text-black   justify-end gap-1">
             <div>
               <Link to="/">
-                <span className="">Apps</span>
+                <span className="text-sky-600">Apps</span>
               </Link>
             </div>
             <span>/</span>
             <div>
               <Link to="/users">
-                <span>Users</span>
+                <span className="text-sky-600">Users</span>
               </Link>
             </div>
           </div>
@@ -41,13 +41,13 @@ const FormSection = () => {
         action="">
         <div className="flex justify-between">
           <div className="flex justify-start items-center">
-            <button>
+            <Link to='/users'>
               <img
                 className="w-7 h-7 object-cover "
                 src="arrow-left-5-svgrepo-com.svg"
                 alt=""
               />
-            </button>
+            </Link>
             <h1 className="font-serif font-medium text-black border-b-2 text-2xl  border-sky-500">
               Create Client
             </h1>

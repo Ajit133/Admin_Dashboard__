@@ -10,7 +10,6 @@ const Navbar = () => {
       <div className="icons">
         <img src="/search.svg" alt="" className="icon" />
         <img src="/app.svg" alt="" className="icon" />
-        {/* <img src="/expand.svg" alt="" className="icon" /> */}
         <FullScreen />
         <div className="notification">
           <img src="/notifications.svg" alt="" />
