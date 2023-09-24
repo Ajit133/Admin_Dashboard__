@@ -18,7 +18,7 @@ const FormSection = () => {
 
   return (
     <div className="formsection">
-      <div className="flex justify-between m-auto bg-white text-black p-5 rounded-md " style={{"width":"850px"}}>
+      <div className="flex justify-between m-auto bg-white text-black p-5 rounded-md " style={{"maxWidth":"850px"}}>
       <h1 className="text-3xl font-bold text-sky-600">Create Client</h1>
       <div className="flex text-black   justify-end gap-1">
             <div>
@@ -160,8 +160,8 @@ const FormSection = () => {
         </div>
 
         <div className="mr-px mt-3 ">
-          <button className="text-white rounded bg-blue-500 p-2 ">Save</button>
-          <button className="text-white rounded bg-red-600 p-2 mx-3">
+          <button className="text-white rounded bg-sky-500 hover:bg-sky-700  p-2 px-8 ">Save</button>
+          <button className="text-white rounded bg-red-600 hover:bg-red-700 p-2 px-8 mx-3">
             Cancel
           </button>
         </div>

@@ -92,8 +92,8 @@ const GeneralForm = () => {
           />{" "}
         </div>
         <div className="mr-px mt-3">
-          <button className="text-white rounded bg-blue-500 p-2 ">Save</button>
-          <button className="text-white rounded bg-red-600 p-2 mx-3">
+        <button className="text-white rounded bg-sky-500 hover:bg-sky-700  p-2 px-8 ">Save</button>
+          <button className="text-white rounded bg-red-600 hover:bg-red-700 p-2 px-8 mx-3">
             Cancel
           </button>
         </div>

@@ -22,6 +22,7 @@ import Logs from "./pages/Logs/Logs";
 // import Table from "./pages/Table/Table";
 import UserProductsForm from "./components/ProductsForm/UserProductsForm";
 import FormSection from "./pages/Form Section/FormSection";
+import Shipping from "./pages/Shipping/Shipping";
 // import TestForm from "./components/Testing_Form/Test_Form";
 // import Order from "./pages/Order/Order";
 
@@ -110,7 +111,10 @@ function App() {
         {
           path: "/userproductform",
           element: <UserProductsForm />,
-        },
+        },{
+          path: "/shipping",
+          element: <Shipping />
+        }
       ],
     },
     {
