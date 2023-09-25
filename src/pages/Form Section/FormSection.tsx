@@ -43,7 +43,7 @@ const FormSection = () => {
           <div className="flex justify-start items-center">
             <Link to='/users'>
               <img
-                className="w-7 h-7 object-cover "
+                className="w-7 h-7 object-cover"
                 src="arrow-left-5-svgrepo-com.svg"
                 alt=""
               />
